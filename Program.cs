@@ -100,14 +100,14 @@ namespace Main
             MailMessage objEmail = new MailMessage();
 
             //rementente do email
-            objEmail.From = new MailAddress("EMAILFROM");
+            objEmail.From = new MailAddress("MAILFROM");
 
             //email para resposta(quando o destinatário receber e clicar em responder, vai para:)
-            objEmail.ReplyToList.Add("EMAILREPLY");
+            objEmail.ReplyToList.Add("MAILREPLY");
 
             //destinatário(s) do email(s). Obs. pode ser mais de um, pra isso basta repetir a linha
             //abaixo com outro endereço
-            objEmail.To.Add("EMAILTO");
+            objEmail.To.Add("MAILTO");
 
             //se quiser enviar uma cópia oculta pra alguém, utilize a linha abaixo:
             //objEmail.Bcc.Add("oculto@provedor.com.br");
@@ -159,7 +159,6 @@ namespace Main
             objSmtp.Send(objEmail);
 
             /* rotina para enviar toda a lista. 
-             * i = 0;
             foreach (var linkVideo in links)
             {
                 var vid = youtube.GetVideo(linkVideo);

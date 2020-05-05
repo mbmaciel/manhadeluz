@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="audio\README.md" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MediaToolkit">
@@ -60,9 +61,7 @@
       <Version>3.0.1</Version>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="audio\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="logo.png" />
     <Content Include="logo_lkF_icon.ico" />
